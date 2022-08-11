@@ -1,0 +1,85 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    margin: 0;
+}
+
+.slider{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-content{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* animacja slajdów - wjazd i wyświetlanie */
+
+.slide-in{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    animation: slide-in .5s forwards;
+    animation-delay: .5s;
+}
+
+@keyframes slide-in{
+    100%{
+        left: 0;
+    }
+}
+
+.slide-out{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    animation: slide-out .5s forwards;
+    animation-delay: .5s;
+}
+
+@keyframes slide-out{
+    100%{
+        left: 100%;
+    }
+}
+
+.item{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* wygląd poszczególnych slajdów */
+
+#slide-1{
+    background: red;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+#slide-2{
+    background: rgb(229, 255, 0);
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+#slide-3{
+    background: rgb(4, 0, 247);
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+#slide-4{
+    background: rgb(255, 0, 242);
+    box-sizing: border-box;
+    padding: 100px;
+}
